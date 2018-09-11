@@ -5,7 +5,10 @@ Plan
 ---
 
 * Github / git
-	* SourceTree branch
+	* Github
+	* SourceTree
+	* Forking
+	* [SourceTree + Forking](https://stackoverflow.com/questions/13273852/how-do-i-update-my-forked-repo-using-sourcetree)
 * Processing
 	* Differences from JavaScript / p5
 		* Types
