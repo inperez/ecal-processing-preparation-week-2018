@@ -18,8 +18,8 @@ Plan
 	* Random unidistant walker
 	* Fields
 	* Grids
-	* Importing Data
-		https://transport.opendata.ch/docs.html
+	* [Importing API Transport Data](https://transport.opendata.ch/docs.html)
+		* `loadJSONObject`
 	* Functions
 		* Trigo
 		* Easing functions
