@@ -13,10 +13,10 @@ void draw() {
   float deltaY = height / rows;
   
   fill(0);
-  for (int i = 0; i < cols; i++) {
+  for (int i = 0; i < cols; i+=2) {
     float x = deltaX * i + deltaX / 2;
     
-    for (int j = 0; j < rows; j++) {
+    for (int j = 0; j < rows; j+=3) {
       float y = deltaY * j + deltaY / 2;
       ellipse(x, y, 10, 10);
     }
