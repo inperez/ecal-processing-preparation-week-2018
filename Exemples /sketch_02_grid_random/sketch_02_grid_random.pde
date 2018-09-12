@@ -7,8 +7,8 @@ void draw() {
   background(255);
   noStroke();
    
-  int cols = 10;
-  int rows = 10;
+  float cols = 100.0;
+  float rows = 100.0;
   float deltaX = width / cols; // delta greek for difference
   float deltaY = height / rows;
   
@@ -19,9 +19,9 @@ void draw() {
   }
 }
 
-void drawCol(int rows, float deltaY, float x){
+void drawCol(float rows, float deltaY, float x){
   for (int j = 0; j < rows; j++) {
     float y = deltaY * j + deltaY / 2;
-    ellipse(x, y, 10, 10);
+    ellipse(x, y, 3, 3);
   }
 }
