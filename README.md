@@ -34,3 +34,4 @@ Plan
 * Visual references
 	* Graphic Design Manual - Armin Hofmann
 	* Bruno Munari - Square Circle Triangle
+	* Vera Molnar — One Percent Disorder
