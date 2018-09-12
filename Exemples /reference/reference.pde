@@ -4,6 +4,7 @@ void setup(){
   size(1, 1); 
   
   primitiveTypes(); // Executing a function
+  conditinalStatements();
   conditions();
   loops();
   functions();
@@ -33,6 +34,18 @@ void primitiveTypes(){
   println(myString);
   myString.toUpperCase(); // example of a method
 }
+
+void conditinalStatements() {
+  // Branching operators
+  boolean blond = true;
+
+  if (blond) {
+    println("blond"); 
+  } else {
+    println("pas blond"); 
+  }
+}
+
 
 void conditions() {
     // Conditions
