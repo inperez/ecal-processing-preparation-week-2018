@@ -8,12 +8,15 @@ void setup(){
 }
 
 void draw() {
-  background(255);
+  //background(255);
   
-  fill(0);
-  ellipse(x, y, 1, 1);
-  int step = 5;
-  x = x + random(-step, step);
-  y = y + random(-step, step);
-  
+  for (int i = 0; i < 100; i++) {
+    fill(0);
+    ellipse(x, y, 1, 1);
+    int step = 5;
+    x = x + random(-step, step);
+    y = y + random(-step, step);
+    
+    
+  }
 }
