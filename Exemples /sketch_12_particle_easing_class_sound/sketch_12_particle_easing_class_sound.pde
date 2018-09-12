@@ -4,15 +4,20 @@
 // values between 0 and 1 are easy to work with
 // https://gist.github.com/gre/1650294
 
+import processing.sound.*;
+
 class EasyParticle {
   PVector pos;
   PVector dest; // destination
-  
+  SinOsc sine;
+
   // Constructor
   // new EasyParicle() this function will be called
-  EasyParticle() {
+  EasyParticle(PApplet p) {
     this.pos = new PVector(width * 0.5, height * 0.5);
     this.dest = new PVector(random(0, width), random(0, height)) ; 
+    sine = new SinOsc(p);
+    sine.play();
   }
   
   void draw(float animPct){ // animationPct
@@ -30,6 +35,8 @@ class EasyParticle {
       dest.y = random(0, height);
     } 
     ellipse(pos.x + diff.x, pos.y + diff.y, 10, 10);
+    sine.freq(pos.y + diff.y);
+    sine.pan(map(pos.x + diff.x, 0, width, -1.0, 1.0));
   }
 }
 
@@ -43,7 +50,7 @@ void setup() {
   
   for (int i = 0; i < 10; i++){
     // Construct object
-    EasyParticle ep = new EasyParticle();
+    EasyParticle ep = new EasyParticle(this);
     
     // Store object in container
     particles.add(ep);
