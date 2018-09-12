@@ -27,9 +27,10 @@ Plan
 		* Comet like countdown with easing
 	* SVG export
 * Coding references
-	* Coding train
-	* Nature of code
+	* [Coding train](https://www.youtube.com/user/shiffman)
+	* [Nature of code](https://natureofcode.com/)
 	* Processing editor examples
+		* `Sketch -> Import Library -> Add library -> Examples`
 * Visual references
 	* Graphic Design Manual - Armin Hofmann
 	* Bruno Munari - Square Circle Triangle
